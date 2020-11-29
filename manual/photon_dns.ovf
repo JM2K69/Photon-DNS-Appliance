@@ -1,0 +1,51 @@
+    <ProductSection ovf:required="true">
+    <Info>Information about the installed software</Info>
+      <Product>PhotonOS DNS Appliance</Product>
+      <Vendor>JM2K69</Vendor>
+      <Version>{{VERSION}}</Version>
+      <ProductUrl>https://github.com/JM2K69/photonos-dns-appliance</ProductUrl>
+      <VendorUrl>https://jm2K69.github.io/</VendorUrl>
+      <Category>VMware Lab</Category>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.esxiname">
+        <Label>ESXI Name</Label>
+        <Description/>
+      </Property>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.domain">
+        <Label>DNS Domain</Label>
+        <Description>Enter the DNS Domain  for you VMware Lab ( ex: vmware.local)</Description>
+      </Property>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.esxinumber">
+        <Label>ESXI number</Label>
+        <Description>Enter the number of ESXI deployed in your Lab ( ex: 3 maximun 6)</Description>
+      </Property>
+      <Property ovf:qualifiers="ValueMap{&quot;fr&quot;, &quot;us&quot;}" ovf:userConfigurable="true" ovf:value="fr" ovf:type="string" ovf:key="guestinfo.keyboardlayout">
+        <Label>Keyboard Layout</Label>
+        <Description>Enter the Keyboard Layout default is US</Description>
+      </Property>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.network">
+        <Label>Network</Label>
+        <Description>Enter the network address ( ex: 10.0.0 remember only /24)</Description>
+      </Property>
+      <Category>Networking</Category>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.hostname">
+        <Label>Hostname</Label>
+        <Description>Enter the hostname ( ex: DNSSRV)</Description>
+      </Property>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.ipaddress">
+        <Label>IP Address</Label>
+        <Description>Enter the ip Address ( ex: 10.0.0.100)</Description>
+      </Property>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.netmask">
+        <Label>Netmask</Label>
+        <Description>Enter the netmask CIDR ( ex: 24 )</Description>
+      </Property>
+      <Property ovf:userConfigurable="true" ovf:type="string" ovf:key="guestinfo.gateway">
+        <Label>Gateway</Label>
+        <Description>Enter the gateway</Description>
+      </Property>
+      <Category>Credentials</Category>
+        <Property ovf:key="guestinfo.root_password" ovf:password="true" ovf:type="string" ovf:userConfigurable="true" ovf:value="">
+            <Label>Root Password</Label>
+            <Description>Password to login in as root. Please use a secure password</Description>
+        </Property>
+    </ProductSection>
