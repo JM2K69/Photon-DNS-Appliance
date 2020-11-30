@@ -1,8 +1,8 @@
-# Reference for building PhotonOS NFS Virtual Appliance (OVA) using Packer
+# PhotonOS DNS Virtual Appliance (OVA) using Packer
 
 ## Requirements
 
-* MacOS or Linux Desktop
+* Linux Desktop
 * vCenter Server or Standalone ESXi host 6.x or greater
 * [VMware OVFTool 4.4.1 (x86)](https://my.vmware.com/group/vmware/downloads/details?downloadGroup=OVFTOOL441&productId=974)
 * [Packer 1.6.4+ (x86)](https://www.packer.io/intro/getting-started/install.html)
