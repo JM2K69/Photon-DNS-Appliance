@@ -29,7 +29,7 @@ git clone https://github.com/lamw/photonos-appliance.git
 
 **Note:** If you need to change the initial root password on the PhotonOS appliance, take a look at `photon-version.json` and `http/photon-kickstart.json`. When the OVA is produced, there is no default password, so this does not really matter other than for debugging purposes.
 
-Step 3 - Start the build by running the build script which simply calls Packer and the respective build files
+## Step 3 - Start the build by running the build script which simply calls Packer and the respective build files
 
 ```
 ./build.sh
