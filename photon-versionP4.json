@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "description": "PhotonOS DNS Appliance",
+  "vm_name": "PhotonOS_DNS_Appliance",
+  "iso_checksum": "402112bcdff59f87beaeefc3649954e231852164",
+  "iso_checksum_type": "sha1",
+  "iso_url": "https://packages.vmware.com/photon/4.0/Beta/iso/photon-4.0-d98e681.iso",
+  "numvcpus": "2",
+  "ramsize": "4096",
+  "guest_username": "root",
+  "guest_password": "VMware1!"
+}
