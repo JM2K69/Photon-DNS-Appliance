@@ -12,7 +12,7 @@
 ## Step 1 - Clone the git repository
 
 ```
-git clone https://github.com/lamw/photonos-appliance.git
+git clone https://github.com/JM2K69/Photon-DNS-Appliance.git
 ```
 
 ## Step 2 - Edit the `photon-builder.json` file to configure the vSphere endpoint for building the PhotonOS appliance
