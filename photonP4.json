@@ -4,7 +4,7 @@
     "photon_ovf_template": "photon.xml.template",
     "ovftool_deploy_vcenter": "10.30.103.1",
     "ovftool_deploy_vcenter_username": "administrator@vsphere.local",
-    "ovftool_deploy_vcenter_password": "BtsInfo2019@+"
+    "ovftool_deploy_vcenter_password": "MySecretPassword2010@++"
   },
   "builders": [
     {
