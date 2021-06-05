@@ -83,7 +83,7 @@ else
 
     cat > /etc/unbound/unbound.conf << __UBOUND_CONF__
 server:
-   interface: 0.0.0.0
+   interface: ${IP_ADDRESS}
    port: 53
    do-ip4: yes
    do-udp: yes
@@ -124,6 +124,7 @@ forward-zone:
 __UBOUND_CONF__
     echo -e "\e[96mRestart Unbound service ..." > /dev/console
     systemctl stop unbound
+    systemctl enable unbound
     systemctl start unbound
     touch /root/ran_customization_dns
 fi

@@ -4,7 +4,7 @@
     "photon_ovf_template": "photon.xml.template",
     "ovftool_deploy_vcenter": "10.30.103.1",
     "ovftool_deploy_vcenter_username": "administrator@vsphere.local",
-    "ovftool_deploy_vcenter_password": "MyS3cr3tP@$$w0rd"
+    "ovftool_deploy_vcenter_password": "BtsInfo2019@+"
   },
   "builders": [
     {
@@ -12,7 +12,7 @@
       "vm_name": "{{ user `vm_name` }}",
       "guest_os_type": "Other",
       "version": "13",
-      "disk_size": 10240,
+      "disk_size": 20480,
       "disk_adapter_type": "pvscsi",
       "disk_additional_size": [
         "1024"

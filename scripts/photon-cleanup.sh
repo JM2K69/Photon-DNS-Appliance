@@ -28,9 +28,9 @@ echo '> Zeroing device to make space...'
 dd if=/dev/zero of=/EMPTY bs=1M || true; sync; sleep 1; sync
 rm -f /EMPTY; sync; sleep 1; sync
 
-#echo '> Setting random root password...'
-#RANDOM_PASSWORD=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;)
-#echo "root:${RANDOM_PASSWORD}" | /usr/sbin/chpasswd
+echo '> Setting random root password...'
+RANDOM_PASSWORD=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;)
+echo "root:${RANDOM_PASSWORD}" | /usr/sbin/chpasswd
 
 unset HISTFILE && history -c && rm -fr /root/.bash_history
 

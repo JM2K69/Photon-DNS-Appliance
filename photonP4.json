@@ -4,7 +4,7 @@
     "photon_ovf_template": "photon.xml.template",
     "ovftool_deploy_vcenter": "10.30.103.1",
     "ovftool_deploy_vcenter_username": "administrator@vsphere.local",
-    "ovftool_deploy_vcenter_password": "MyS3cr3tP@$$w0rd"
+    "ovftool_deploy_vcenter_password": "BtsInfo2019@+"
   },
   "builders": [
     {
@@ -19,7 +19,7 @@
       ],
       "boot_command": [
         "<esc><wait>",
-        "vmlinuz initrd=initrd.img root=/dev/ram0 loglevel=3 ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/photon-kickstartP4.json photon.media=cdrom",
+        "vmlinuz initrd=initrd.img root=/dev/ram0 loglevel=3 ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/photon-kickstartP4.json photon.media=cdrom insecure_installation=1",
         "<enter>"
       ],
       "boot_wait": "10s",

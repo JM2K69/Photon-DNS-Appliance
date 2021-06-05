@@ -15,8 +15,8 @@ echo '> Clean and makecache tdnf...'
 tdnf clean all
 tdnf makecache
 
-echo '> Applying latest Updates...'
-tdnf -y update
+#echo '> Applying latest Updates...'
+#tdnf -y update
 
 
 echo '> Installing Additional Packages...'

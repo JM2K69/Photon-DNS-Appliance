@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-echo "Building PhotonOS DNS Appliance with PhotonOS 4 Beta ..."
+echo "Building PhotonOS DNS Appliance with PhotonOS 4 GA ..."
 rm -f output-vmware-iso/*.ova
 
 echo "Applying packer build to photon.json ..."
